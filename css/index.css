@@ -73,12 +73,17 @@ h1, h2, h3, h4, h5 {
 header{}
 
 
-nav{
+
+.nav-top{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between; 
 }
 
-.logo {}
+nav a {
+   padding: 30px;
+    
+}
+
 
  
 .top-content{
@@ -88,10 +93,18 @@ nav{
 }
 
 .Innovation{
+    font-size: 60px ;
     width: 50%;
     height: 60%;
-    padding: 10% 0 0 20%;
+    padding: 10% 0 10% 10%;
 }
+
+button{
+width: 150px;
+height: 40px;
+
+}
+
 
 h1 {}
 
@@ -142,8 +155,127 @@ h1 {}
 
 footer{
     margin-top: 20px;
+
 }
 
 .Copy-right{
  margin-left: 40%;
+}
+
+
+.addy{
+    padding-bottom: 10px;
+}
+
+.number{
+    padding-bottom: 10px;
+}
+
+
+
+@media( max-width: 800px){
+
+.container{
+    width: 800px;
+    height: 1370px;
+    margin: 0 auto;
+}
+
+.img-left{
+    display: none;
+}
+
+
+
+.nav-top {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin:0% 40% 0 40%;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5px;
+    
+     }
+
+
+
+}
+
+
+@media(  max-width: 500px){
+
+    .container{
+        width: 500px;
+        height: 2047px;
+        margin: 0 auto;
+    }
+
+    .nav-top {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin:0% 40% 0 40%;
+    }
+
+
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 5px;
+        
+         }
+
+
+         .mid-top{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-between;
+            align-content: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .Features {
+            width: 100%;
+        
+        }
+
+        .About{
+            width: 100%;
+            padding-top:10px;
+        }
+
+        .mid-bottom{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-between;
+            align-content: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .Services{
+            padding-right: 15px;
+        }
+        
+        .Product{
+            padding-top: 15px;
+            padding-right: 15px;
+        }
+        
+        .Vision{
+            padding-top: 15px;
+            padding-right: 15px;
+        }
+
+        .Copy-right{
+            margin-left: 40%;
+            padding-top:40px ;
+           }
 }
